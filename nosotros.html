@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuitarLA - Nosotros</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <!-- sección header -->
+
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__barra">
+                <a href="/">
+                    <img class="header__logo" src="img/logo.svg" alt="imagen logo">
+                </a>
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="index.html">Inicio</a>
+                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="blog.html">Blog</a>
+                    <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+                </nav>
+            </div> <!-- header__barra -->
+        </div>
+    </header>
+
+    <!-- Sección principal productos -->
+
+    <main class=" nosotros nosotros__contenedor">
+        <h2 class="nosotros__heading">Nosotros</h2>
+        <div class="nosotros__grid">
+            <picture>
+                <source srcset="img/nosotros.avif" type="image/avif">
+                <source srcset="img/nosotros.webp" type="image/webp">
+                <img loading="lazy" src="img/nosotros.jpg" alt="imagen nosotros" width="1200" height="800">
+            </picture>
+
+            <div class="nosotros__contenido">
+                <p class="nosotros__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, quam. Quasi ratione pariatur ex nihil sint sed aliquam, saepe accusamus laboriosam libero id, quae expedita ipsam praesentium magni atque exercitationem?</p>
+                <p class="nosotros__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis suscipit dolores, ex architecto ab veritatis praesentium optio deserunt? Animi quaerat alias, dolor magni doloremque minus inventore nulla optio distinctio.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección footer -->
+
+    <footer class="footer">
+        <div class="footer__contenido footer__contenedor">
+            <nav class="footer__nav">
+                <a href="index.html" class="footer__enlace">Inicio</a>
+                <a href="nosotros.html" class="footer__enlace">Nosotros</a>
+                <a href="blog.html" class="footer__enlace">Blog</a>
+                <a href="tienda.html" class="footer__enlace">Tienda</a>
+            </nav>
+            <p class="footer__copyright">Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

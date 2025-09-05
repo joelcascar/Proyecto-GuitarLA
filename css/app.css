@@ -22,13 +22,13 @@ img {
     display: block;
 }
 
-[class$="__contenedor"]{
+[class$="contenedor"]{
     max-width: 120rem;
     margin: 0 auto;
     width: 95%;
 }
 
-[class$="__heading"]{
+[class$="heading"]{
     font-size: 4rem;
     text-align: center;
     font-weight: 900;
@@ -39,12 +39,23 @@ img {
 /* Sección header */
 
 .header{
-    background-image: linear-gradient(to right, rgb(0 0 0 / 0.7) 0%, rgb(0 0 0 / 0.7) 100%), url(../img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 5rem 0;
     position: relative;
+}
+
+.notavif.notwebp .header{
+    background-image: linear-gradient(to right, rgb(0 0 0 / 0.7) 0%, rgb(0 0 0 / 0.7) 100%), url(../img/header.jpg);
+}
+
+.webp .header{
+      background-image: linear-gradient(to right, rgb(0 0 0 / 0.7) 0%, rgb(0 0 0 / 0.7) 100%), url(../img/header.webp);
+}
+
+.avif .header{
+      background-image: linear-gradient(to right, rgb(0 0 0 / 0.7) 0%, rgb(0 0 0 / 0.7) 100%), url(../img/header.avif);
 }
 
 .header__barra{
@@ -233,12 +244,23 @@ img {
 /* Sección curso */
 
 .cursos{
-    background-image: linear-gradient(to right, rgb(0 0 0 / .65) 0%, rgb(0 0 0 / .65) 100%), url(../img/cursos_bg.jpg);
     background-repeat: no-repeat;
     background-position: center, center;
     background-size: cover, cover;
     padding: 10rem 0;
     margin-top: 10rem;
+}
+
+.notavif.notwebp .cursos{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .65) 0%, rgb(0 0 0 / .65) 100%), url(../img/cursos_bg.jpg);
+}
+
+.webp .cursos{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .65) 0%, rgb(0 0 0 / .65) 100%), url(../img/cursos_bg.webp);
+}
+
+.avif .cursos{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .65) 0%, rgb(0 0 0 / .65) 100%), url(../img/cursos_bg.avif);
 }
 
 @media (min-width: 768px) {
@@ -400,5 +422,17 @@ img {
     text-align: center;
 }
 
+/* Sección Nosotros */
 
+.nosotros__grid{
+    display: grid;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .nosotros__grid{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+}
 
