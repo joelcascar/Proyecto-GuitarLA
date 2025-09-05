@@ -230,5 +230,65 @@ img {
     color: var(--blanco);
 }
 
+/* Sección curso */
+
+.cursos{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .65) 0%, rgb(0 0 0 / .65) 100%), url(../img/cursos_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover, cover;
+    padding: 10rem 0;
+    margin-top: 10rem;
+}
+
+@media (min-width: 768px) {
+    .cursos__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }    
+}    
+
+
+
+.cursos__contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .cursos__contenido{
+        grid-column: 2/3;
+    }
+}
+
+.cursos__descripcion{
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2.4rem;
+
+}
+
+.cursos__enlace{
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 1rem 5rem;
+    border: 2px solid var(--primary);
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.cursos__enlace:hover{
+    background-color: var(--primary);
+    color: var(--blanco);
+}
+
+
 
 
