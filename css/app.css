@@ -207,6 +207,14 @@ img {
     align-items: center;
 }
 
+.producto__imagen{
+    min-width: 15rem;
+}
+
+.producto__contenido{
+    min-width: 20rem;
+}
+
 .producto__nombre{
     font-size: 3rem;
     text-transform: uppercase;
@@ -221,6 +229,7 @@ img {
     font-size: 6rem;
     font-weight: 900;
     margin: 0;
+    
 }
 
 .producto__enlace{
@@ -245,7 +254,13 @@ img {
 .producto__formulario{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
+}
+
+@media (min-width: 480px) {
+    .producto__formulario{
+        width: 100%;
+    }
 }
 
 .producto__label{
@@ -257,6 +272,7 @@ img {
     border: 2px solid var(--primary);
     padding: 1rem;
     text-align: center;
+    display: block;
 }
 
 .producto__cantidad:focus-visible{
@@ -272,11 +288,18 @@ img {
     text-transform: uppercase;
     border: none;
     text-align: center;
-    padding: 2rem 5rem;
+    padding: 2rem 1rem;
     color: var(--blanco);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     transition: background-color .3s ease;
+}
+
+@media (min-width: 480px) {
+    .producto__agregar-carrito{
+        font-size: 1.8rem;
+        padding: 2rem 5rem;
+    }
 }
 
 .producto__agregar-carrito:hover{
